@@ -8,7 +8,8 @@
 
 -----
 ## Login
-DB updation - CRUD for fleet
+- DB updation -> CRUD for fleet
+- gmail login
 
 ### CRUD for fleet
 - Daily updates for fleet arrival and departure
