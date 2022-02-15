@@ -1,0 +1,111 @@
+.header {
+  /* border: 3px solid goldenrod; */
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.headerNav {
+  /* display: flex;
+  justify-content: space-between;
+  background-color: var(--animesh-choice-black);
+  color: white; */
+  /* display: none; */
+}
+
+.headerNavUl {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .logo {
+  width: 17px;
+  width: 30px;
+}
+
+.header a:hover {
+  color: var(--lime-green);
+}
+
+/* Add a hamburger to the website */
+.navHamburgerIcon {
+  display: flex;
+  /* position: fixed; */
+  justify-content: space-between;
+  z-index: 10;
+  background-color: var(--animesh-choice-black);
+  cursor: pointer;
+  gap: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.navHamburger {
+  /* display: none; */
+  position: fixed;
+  font-size: 1.25rem;
+  /* This is hacky, change it */
+  top: 3.2rem;
+  right: 0rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navHamburger a {
+  display: block;
+  padding: 1rem 3.5rem;
+}
+
+.navHamburger a:hover {
+  background-color: var(--lime-green);
+  font-weight: 700;
+  color: black;
+}
+
+.navBar {
+  display: none;
+}
+
+/* ---------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------- */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navHamburgerIcon,
+  .navHamburger {
+    display: none;
+  }
+
+  .navBar {
+    display: flex;
+  }
+
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--animesh-choice-black);
+    color: white;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

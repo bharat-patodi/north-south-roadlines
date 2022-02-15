@@ -1,10 +1,10 @@
 ## Page Requests
-- Enquiry
 - About Us
-- Nav Bar -> Login + Enquiry
-- Blog
 - Home Page -> Intro (Metrics for Clients, Trucks, Locations) + Clients + Testimonials + Services
+- Nav Bar -> Login + Enquiry
+- Enquiry
 - Footer -> Social Media + Copyright
+- Blog
 
 -----
 ## Login
