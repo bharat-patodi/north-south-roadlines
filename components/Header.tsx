@@ -78,18 +78,18 @@ const HamburgerNavComponent = () => {
         </Link>
       </li>
       <li>
-        <Link href="/">
-          <a>Shop</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          <a>Stories</a>
+        <Link href="/enquiry">
+          <a>Enquiry</a>
         </Link>
       </li>
       <li>
         <Link href="/contact">
           <a>Contact</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/about">
+          <a>About Us</a>
         </Link>
       </li>
       <li>

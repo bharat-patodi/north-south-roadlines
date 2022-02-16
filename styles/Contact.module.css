@@ -1,0 +1,116 @@
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.heading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 4rem 0;
+    font-size: 4rem;
+}
+
+.contact h3 {
+    font-size: 2rem;
+}
+
+.contactDetails {
+    background-color: #FFE533;
+    flex-grow: 1;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.08rem;
+    background-image: url('/repeating-chevrons.svg');
+    background-attachment: fixed;
+}
+
+.enquiryForm {
+    padding-top: 20rem;
+    background-color: #FFCC00;
+    flex-grow: 1;
+    text-align: center;
+    background-image: url('/repeating-chevrons.svg');
+    background-attachment: fixed;
+}
+
+.enquiryForm form {
+    display: inline-block;
+    margin: 1rem auto 2rem auto;
+    text-align: left;
+}
+
+.enquiryForm form *:not(:last-child):not(:first-child) {
+    width: 100%;
+}
+
+.enquiryForm input[type="submit"] {
+    background-color: var(--lime-green);
+    font-size: 1.08rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.enquiryForm input[type="submit"]:active {
+    /* border: none; */
+    background-color: var(--animesh-choice-black);
+    color: white;
+}
+
+/* For centering the form, use https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css */
+
+.enquiryForm select {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.enquiryForm input {
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.enquiryForm input:not(input[type="submit"]):focus, .enquiryForm textarea:focus {
+    /* outline: none; */
+    outline: 3px solid var(--lime-green);
+}
+
+.enquiryForm textarea {
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 0.25rem 0 1rem 0;
+    resize: none;
+}
+
+
+/* ---------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------- */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .contactDetails {
+        padding-top: 15rem;
+    }
+    .enquiryForm {
+        padding-top: 15rem;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
