@@ -22,22 +22,22 @@ const addLead = async (e: any) => {
   let message = (document.querySelector("#message") as HTMLInputElement)?.value;
   e.preventDefault();
 
-  let response = await supabase.from("Leads").insert({
-    usertype: usertype,
-    name: name,
-    email: email,
-    number: telephone,
-    message: message,
-  });
-  console.log(response);
-  // Console log the response from server
-  if (response.status === 201) {
-    console.log("Data added");
-    console.log(response);
-    // toast.success(" \u{1F44D} Thank You for your enquiry", {
-    //   position: toast.POSITION.TOP_CENTER,
-    // });
-  }
+//   let response = await supabase.from("Leads").insert({
+//     usertype: usertype,
+//     name: name,
+//     email: email,
+//     number: telephone,
+//     message: message,
+//   });
+//   console.log(response);
+//   // Console log the response from server
+//   if (response.status === 201) {
+//     console.log("Data added");
+//     console.log(response);
+//     // toast.success(" \u{1F44D} Thank You for your enquiry", {
+//     //   position: toast.POSITION.TOP_CENTER,
+//     // });
+//   }
   e.target.reset();
 };
 
