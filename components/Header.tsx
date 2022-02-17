@@ -38,6 +38,11 @@ const Header = () => {
               <a>Contact</a>
             </Link>
           </li>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
         </ul>
         <ul className={styles.headerNavUl}>
           <li>Call us at: +91 94254-10665</li>
@@ -90,6 +95,11 @@ const HamburgerNavComponent = () => {
       <li>
         <Link href="/about">
           <a>About Us</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/blog">
+          <a>Blog</a>
         </Link>
       </li>
       <li>

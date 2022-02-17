@@ -8,7 +8,7 @@
 .headerNav {
   /* display: flex;
   justify-content: space-between;
-  background-color: var(--animesh-choice-black);
+  background-color: var(--aditya-choice-black);
   color: white; */
   /* display: none; */
 }
@@ -33,7 +33,7 @@
 }
 
 .header a:hover {
-  color: var(--lime-green);
+  color: var(--aditya-choice-green);
 }
 
 /* Add a hamburger to the website */
@@ -42,7 +42,7 @@
   /* position: fixed; */
   justify-content: space-between;
   z-index: 10;
-  background-color: var(--animesh-choice-black);
+  background-color: var(--aditya-choice-black);
   cursor: pointer;
   gap: 2rem;
   padding: 0.5rem 1.5rem;
@@ -61,7 +61,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .navHamburger a {
@@ -70,7 +71,7 @@
 }
 
 .navHamburger a:hover {
-  background-color: var(--lime-green);
+  background-color: var(--aditya-choice-green);
   font-weight: 700;
   color: black;
 }
@@ -97,7 +98,7 @@ Media Queries
   .headerNav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--animesh-choice-black);
+    background-color: var(--aditya-choice-black);
     color: white;
   }
 }

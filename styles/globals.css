@@ -154,7 +154,7 @@ html {
 Variables
 --------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
 
 :root {
   /* Colors Begin */
@@ -203,9 +203,9 @@ Variables
   --dark-mode-blue: #388bfd;
   /* Color Dark Theme End */
 
-  /* --animesh-choice-black: #2b303a; */
-  --animesh-choice-black: #000;
-
+  /* --aditya-choice-black: #2b303a; */
+  --aditya-choice-black: #000;
+  --aditya-choice-green: #01ff70;
   /* Colors End */
 
   /* Font Values Begin */
@@ -239,7 +239,7 @@ body {
   margin: 0 auto;
   /* font-family: var(--text-font); */
   font-family: "Raleway";
-  color: var(--animesh-choice-black);
+  color: var(--aditya-choice-black);
   /* font-weight: 700; */
 }
 
@@ -247,17 +247,22 @@ main {
   min-height: 80vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--title-font), sans-serif;
   /* font-family: "Nunito Sans", sans-serif; */
   font-weight: 700;
   text-align: center;
   margin: 1rem 0;
-
 }
 
-h1, h2 {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+h1,
+h2 {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -299,10 +304,9 @@ Modular Classes
 }
 
 .hindiText {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------------------------------------------------
 Project Specific Styles
 --------------------------------------------------------------- */
-

@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faBars } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -19,11 +19,25 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <h1>North South Roadlines</h1>
+        <section className={`${styles.homeSection} ${styles.introduction}`}>
+          <h1>North South Roadlines</h1>
+          <p>12 Clients</p>
+          <p>12 Trucks</p>
+          <p>12 Locations</p>
+        </section>
+        <section className={`${styles.homeSection} ${styles.introduction}`}>
+          <h2>Clients</h2>
+        </section>
+        <section className={`${styles.testimonials} ${styles.homeSection}`}>
+          <h2>Testimonials</h2>
+        </section>
+        <section className={`${styles.services} ${styles.homeSection}`}>
+          <h2>Services</h2>
+        </section>
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
