@@ -20,3 +20,6 @@
 
 ## Mobile App
 Needed for real-time updation of fleet movement
+
+## ToDo
+- Make text size responsive and update my css cheatsheet. Use - https://www.editorx.com/shaping-design/article/font-size
