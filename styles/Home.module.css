@@ -5,18 +5,56 @@
   /* background-image: url('/repeating-chevrons.svg');
   background-attachment: fixed; */
   text-align: center;
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../public/north-south-roadlines-truck-view.jpeg");
+  /* max-height: 100vh; */
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* merge background color and image */
+  background-blend-mode: multiply;
+  color: white;
 }
 
+.introduction span {
+  margin: 0;
+  padding: 0;
+}
+
+.introImage {
+  /* border: 3px solid green !important; */
+  /* margin: 0;
+  padding: 0; */
+  /* height: 100vh !important; */
+  /* max-height: 100vh; */
+  display: none;
+  /* width: 50vw; */
+}
+
+.introText {
+
+}
 /* Section 02 */
+
 .clients {
+
+  min-height: 20vh;
+  background-color: var(--aditya-choice-black);
+  color: white;
+}
+
+.clients .clientList {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
   font-size: 1.25rem;
-  /* background-image: url('/repeating-chevrons.svg'); */
-  /* border: 3px solid green; */
 }
 
 .mainProduct > * {
@@ -46,14 +84,6 @@
 .homeSection {
   padding: 5rem 0;
   /* border: 3px solid green; */
-}
-
-.clients {
-  /* border: 5px solid saddlebrown; */
-  /* margin: 2rem 0; */
-  min-height: 20vh;
-  background-color: var(--aditya-choice-black);
-  color: white;
 }
 
 .testimonialCards {

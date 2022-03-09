@@ -1,13 +1,16 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faBars } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(fab, faShoppingCart, faBars);
+// Static imports
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import styles from "../styles/Home.module.css";
+import introImage from "../public/north-south-roadlines-truck-view.jpeg";
 
 const Home: NextPage = () => {
   return (
@@ -19,20 +22,53 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <section className={`${styles.homeSection} ${styles.introduction}`}>
-          <h1>North South Roadlines</h1>
-          <p>12 Clients</p>
-          <p>12 Trucks</p>
-          <p>12 Locations</p>
+        <section className={`${styles.introduction}`}>
+          <picture className= {styles.introImage}>
+            <img src="north-south-roadlines-truck-view.jpeg"></img>
+          </picture>
+          {/* <Image src={introImage} className={styles.introImage}></Image> */}
+          <div className={styles.introText}>
+            <h1>North South Roadlines</h1>
+            <p>12 Clients</p>
+            <p>12 Trucks</p>
+            <p>12 Locations</p>
+          </div>
         </section>
-        <section className={`${styles.homeSection} ${styles.introduction}`}>
+        <section className={`${styles.homeSection} ${styles.clients}`}>
           <h2>Clients</h2>
+          <div className={styles.clientList}>
+            <p>Britannia</p>
+            <p>Bisleri</p>
+            <p>Samsung</p>
+            <p>Nilkamal</p>
+            <p>TATA</p>
+            <p>Amazon</p>
+            <p>DMart</p>
+          </div>
         </section>
         <section className={`${styles.testimonials} ${styles.homeSection}`}>
           <h2>Testimonials</h2>
         </section>
         <section className={`${styles.services} ${styles.homeSection}`}>
-          <h2>Services</h2>
+          <h2>30 years of Experience</h2>
+          <p>
+            NSRL has been in Supply Chain & Logistics Management since 1993. The
+            Company first took centre stage by being Airtel's first logistics
+            partner in Central India 2 decades ago. Headquartered in Indore,
+            NSRL has branches in Ahmedabad, Pune, Mumbai, Gurgaon, Chandigarh,
+            Raipur, & Bhopal.
+          </p>
+          <p>
+            NSRL has also expanded its services to become a fully-fledged
+            Third-Party Logistics (3PL) services provider.
+          </p>
+          <p>
+            We, at North South Roadlines, have always been committed to
+            providing exemplary services. With a considerable experience of over
+            31 years, spanning over 4 decades, we have a proven track-record of
+            delivering top-quality services and always setting new benchmarks in
+            customer-satisfaction.
+          </p>
         </section>
       </main>
       <Footer />

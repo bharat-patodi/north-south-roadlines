@@ -262,13 +262,15 @@ h6 {
 
 h1,
 h2 {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  word-break: break-word;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.3rem;
   margin: 2rem;
   font-weight: 900;
+  /* break word if it is long */
+
 }
 
 h2 {
