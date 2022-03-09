@@ -53,7 +53,7 @@ const Home: NextPage = () => {
           <h2>30 years of Experience</h2>
           <p>
             NSRL has been in Supply Chain & Logistics Management since 1993. The
-            Company first took centre stage by being Airtel's first logistics
+            Company first took centre stage by being Airtel&apos;s first logistics
             partner in Central India 2 decades ago. Headquartered in Indore,
             NSRL has branches in Ahmedabad, Pune, Mumbai, Gurgaon, Chandigarh,
             Raipur, & Bhopal.
