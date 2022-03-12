@@ -154,7 +154,7 @@ html {
 Variables
 --------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 
 :root {
   /* Colors Begin */
@@ -206,6 +206,7 @@ Variables
   /* --aditya-choice-black: #2b303a; */
   --aditya-choice-black: #000;
   --aditya-choice-green: #01ff70;
+  --aditya-choice-red: #F44250;
   /* Colors End */
 
   /* Font Values Begin */
@@ -214,9 +215,9 @@ Variables
   font-family: 'Raleway', sans-serif;
   font-family: 'Raleway Dots', cursive;
   */
-  --title-font: "Nunito Sans";
-  --text-font: "Raleway";
-  --tertiary-font: "Poppins";
+  --title-font: "Raleway";
+  --text-font: "Merriweather";
+  --tertiary-font: "Raleway";
   /* Font Values End */
 
   /* Font Sizes Begin */
@@ -237,10 +238,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
-  /* font-family: var(--text-font); */
-  font-family: "Raleway";
+  font-family: var(--text-font), serif;
   color: var(--aditya-choice-black);
-  /* font-weight: 700; */
 }
 
 main {
@@ -254,7 +253,6 @@ h4,
 h5,
 h6 {
   font-family: var(--title-font), sans-serif;
-  /* font-family: "Nunito Sans", sans-serif; */
   font-weight: 700;
   text-align: center;
   margin: 1rem 0;
@@ -266,11 +264,9 @@ h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 2rem;
   font-weight: 900;
-  /* break word if it is long */
-
 }
 
 h2 {
@@ -279,7 +275,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 2rem;
 }
 
 label,
@@ -300,6 +296,7 @@ Modular Classes
 }
 
 .container {
+  /* A nice name is lockup for container */
   /* max-width: 100ch; */
   max-width: 80%;
   margin: 0 auto;
@@ -312,3 +309,6 @@ Modular Classes
 /* ---------------------------------------------------------------
 Project Specific Styles
 --------------------------------------------------------------- */
+.highlightRedText {
+  color: var(--aditya-choice-red);
+}

@@ -1,29 +1,32 @@
 /* Section 01 */
 .introduction {
-  /* border: 5px solid hotpink; */
-  /* min-height: 20vh; */
-  /* background-image: url('/repeating-chevrons.svg');
-  background-attachment: fixed; */
   text-align: center;
-  /* border: 3px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./../public/north-south-roadlines-truck-view.jpeg");
+  /* background-image: url("./../public/north-south-roadlines-truck-view.jpeg"); */
+  background-image: url("./../public/home-page-intro-section.jpg");
   /* max-height: 100vh; */
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   /* merge background color and image */
   background-blend-mode: multiply;
   color: white;
+  /* color: #FECC1B; */
 }
 
 .introduction span {
   margin: 0;
   padding: 0;
+}
+
+.introduction h3 {
+  text-transform: capitalize;
+  /* color: #F24F70; */
+  /* color: #F44250; */
 }
 
 .introImage {
@@ -140,10 +143,6 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-}
-
-.highlight-green {
-  color: var(--aditya-choice-green);
 }
 
 /* .strikeThrough {

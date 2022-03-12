@@ -14,6 +14,7 @@ import introImage from "../public/north-south-roadlines-truck-view.jpeg";
 
 const Home: NextPage = () => {
   return (
+    // CHange this to just container since it is in global
     <div className={styles.container}>
       <Head>
         <title>NSRL</title>
@@ -23,15 +24,22 @@ const Home: NextPage = () => {
       <Header />
       <main className={styles.main}>
         <section className={`${styles.introduction}`}>
-          <picture className= {styles.introImage}>
-            <img src="north-south-roadlines-truck-view.jpeg"></img>
-          </picture>
-          {/* <Image src={introImage} className={styles.introImage}></Image> */}
-          <div className={styles.introText}>
-            <h1>North South Roadlines</h1>
-            <p>12 Clients</p>
-            <p>12 Trucks</p>
-            <p>12 Locations</p>
+          <div className="container">
+            <picture className={styles.introImage}>
+              <img src="north-south-roadlines-truck-view.jpeg"></img>
+            </picture>
+            {/* <Image src={introImage} className={styles.introImage}></Image> */}
+            <div className={styles.introText}>
+              <h1>
+                North South Road
+                <wbr />
+                lines
+              </h1>
+              <h3 className={styles.introText}>
+                Trucking value since
+                <span className="highlightRedText"> 1994</span>
+              </h3>
+            </div>
           </div>
         </section>
         <section className={`${styles.homeSection} ${styles.clients}`}>
@@ -53,10 +61,10 @@ const Home: NextPage = () => {
           <h2>30 years of Experience</h2>
           <p>
             NSRL has been in Supply Chain & Logistics Management since 1993. The
-            Company first took centre stage by being Airtel&apos;s first logistics
-            partner in Central India 2 decades ago. Headquartered in Indore,
-            NSRL has branches in Ahmedabad, Pune, Mumbai, Gurgaon, Chandigarh,
-            Raipur, & Bhopal.
+            Company first took centre stage by being Airtel&apos;s first
+            logistics partner in Central India 2 decades ago. Headquartered in
+            Indore, NSRL has branches in Ahmedabad, Pune, Mumbai, Gurgaon,
+            Chandigarh, Raipur, & Bhopal.
           </p>
           <p>
             NSRL has also expanded its services to become a fully-fledged
