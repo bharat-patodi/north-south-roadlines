@@ -8,14 +8,18 @@
   background-image: url("./../public/home-page-intro-section.jpg");
   /* max-height: 100vh; */
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
   background-color: rgba(0, 0, 0, 0.4);
   /* merge background color and image */
   background-blend-mode: multiply;
   color: white;
   /* color: #FECC1B; */
+  /* background: url("./../public/home-page-intro-section.jpg"), linear-gradient(lightgreen, lightblue); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  text-shadow: 1px 1px 4px #333;
+
 }
 
 .introduction span {
@@ -46,19 +50,121 @@
 
 .clients {
 
+}
+
+.clientsSection {
   min-height: 20vh;
   background-color: var(--aditya-choice-black);
   color: white;
+    width: 100%;
+    position: relative;
+    /* margin: 3rem; */
+    /* With a negative z-index, the section goes behind the overlay. Also, it doesn't come on top of fixed sections like navbar on scrolling */
+    z-index: -1;
+
 }
 
-.clients .clientList {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  font-size: 1.25rem;
+.clientsSection h3 {
+  font-size: 1.3rem;
 }
+
+.clientsSectionSquares {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem 1rem; */
+    justify-content: center;
+}
+
+.square {
+    width: 175px;
+    height: 175px;
+    /* background: linear-gradient(90deg, #d53369 0%, #daae51 100%); */
+    background: #e43a15;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e65245, #e43a15);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e65245, #e43a15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* top: 10%; */
+    text-align: center;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* border: 5px solid red; */
+}
+
+.top-square {
+    box-shadow: 0px 0px 10px black;
+    border: 5px solid white;
+    border-radius: 10px;
+    /* background:rgba(0, 0, 0, 50%); */
+    /* color:white; */
+}
+
+.clientSectionOverlay {
+    background-color: rgba(0, 0, 0, 50%);
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+.clientsSection img {
+    width: 80%;
+}
+
+/* Section 03 */
+
+.citySection {
+    text-align: center;
+}
+
+.citySectionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.city img {
+    width: 60px;
+}
+
+.city {
+    text-align: center;
+    border: 3px dotted red;
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: inset 0px 0px 80px #e74c3c; */
+}
+
+.citySection h2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  }
+
+  .citySection h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Section 04 */
+
+
+
+/* Section 05 */
 
 .mainProduct > * {
   /* Study All this hackery */
