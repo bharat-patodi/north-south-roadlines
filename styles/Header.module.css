@@ -28,8 +28,8 @@
 }
 
 .header .logo {
-  width: 17px;
-  width: 30px;
+  /* width: 17px; */
+  max-width: 75px;
 }
 
 .header a:hover {

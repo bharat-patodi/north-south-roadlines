@@ -19,7 +19,7 @@ const Header = () => {
           <li>
             <Link href="/">
               <a>
-                <img src="logo.png" alt="logo" className={styles.logo} />
+                <img src="nsrl-logo.png" alt="logo" className={styles.logo} />
               </a>
             </Link>
           </li>
