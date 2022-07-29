@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "../styles/Contact.module.css";
+import styles from "../styles/Enquiry.module.css";
 // import { supabase } from "../utils/supabaseClient";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
