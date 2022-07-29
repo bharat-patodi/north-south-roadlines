@@ -38,11 +38,11 @@ const Header = () => {
               <a>Contact</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/blog">
               <a>Blog</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <ul className={styles.headerNavUl}>
           <li>Call us at: +91 94254-10665</li>
