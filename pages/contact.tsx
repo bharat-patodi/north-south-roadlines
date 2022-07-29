@@ -6,10 +6,13 @@ const Contact = () => {
     <>
       <Header />
       <main>
+        <div className="container">
+
         <h1>Contact Us</h1>
-        <p>Address: 21/7, Gulab Bagh, Dewas Naka, Indore, Madhya Pradesh, India</p>
-        <p>Phone Number: 94254-10665, 92001-61925, 98931-33019</p>
-        <p>Email: northsouthrl@gmail.com</p>
+        <h4>Address: 21/7, Gulab Bagh, Dewas Naka, Indore, Madhya Pradesh, India</h4>
+        <h4>Phone Number: 94254-10665, 92001-61925, 98931-33019</h4>
+        <h4>Email: northsouthrl@gmail.com</h4>
+        </div>
       </main>
       <Footer />
     </>
