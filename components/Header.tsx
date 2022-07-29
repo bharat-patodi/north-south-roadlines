@@ -60,6 +60,17 @@ const Header = () => {
           <li>
             <Link href="/">
               <a>
+                <img
+                  src="nsrl-logo.png"
+                  alt="logo"
+                  className={styles.navHamburgerLogo}
+                />
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>
                 <FontAwesomeIcon
                   icon="bars"
                   onClick={handleHamburgerClick}
@@ -95,11 +106,6 @@ const HamburgerNavComponent = () => {
       <li>
         <Link href="/about">
           <a>About Us</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/blog">
-          <a>Blog</a>
         </Link>
       </li>
       <li>
