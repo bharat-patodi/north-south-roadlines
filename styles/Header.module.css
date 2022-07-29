@@ -54,7 +54,7 @@
   position: fixed;
   font-size: 1.25rem;
   /* This is hacky, change it */
-  top: 3.2rem;
+  top: 3.6rem;
   right: 0rem;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
@@ -68,6 +68,10 @@
 .navHamburger a {
   display: block;
   padding: 1rem 3.5rem;
+}
+
+.navHamburgerLogo {
+  max-width: 50px;
 }
 
 .navHamburger a:hover {
