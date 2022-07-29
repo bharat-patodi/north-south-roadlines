@@ -155,13 +155,30 @@
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
   }
 
-  .citySection h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+.citySection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 /* Section 04 */
 
+.servicesSection {
+  text-align: center;
+  background-image: url("./../public/home-page-services-section.jpg");
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* merge background color and image */
+  background-blend-mode: multiply;
+  color: white;
+  /* color: #FECC1B; */
+  /* background: url("./../public/home-page-services-section.jpg"), linear-gradient(lightgreen, lightblue); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-shadow: 1px 1px 4px #333;
+  font-size: 1.3rem;
+
+}
 
 
 /* Section 05 */
